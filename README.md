@@ -1,1 +1,1 @@
-Webservice desenvolvido em React para o Podcast PodProgramar
+Website desenvolvido em React para o Podcast PodProgramar
