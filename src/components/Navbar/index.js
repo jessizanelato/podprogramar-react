@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import logo from '../../img/logo-180-completa.png';
 import './style.css';
 
 export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                <Link className="navbar-brand" to="/"><img src={logo} height="80" alt="Logo PodProgramar" /></Link>
+                <Link className="navbar-brand" to="/"><img src={this.props.logo} height="80" alt="Logo PodProgramar" /></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
