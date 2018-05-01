@@ -6,7 +6,7 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                <Link className="navbar-brand" to="/"><img src={this.props.logo} height="80" alt="Logo PodProgramar" /></Link>
+                <Link className="navbar-brand" to="/"><i className="fas fa-female"></i> PodProgramar</Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

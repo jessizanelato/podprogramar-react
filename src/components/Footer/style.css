@@ -1,0 +1,12 @@
+footer{
+    border-top: 1px solid gray;
+    font-size: 12px !important;
+    padding: 10px 10px 0px;
+}
+footer a{
+    color:white !important;
+}
+footer .list-inline-item{
+    font-size: 13px!important;
+    margin:0px 8px !important;
+}
