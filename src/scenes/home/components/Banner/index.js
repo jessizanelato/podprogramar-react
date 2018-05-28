@@ -28,12 +28,12 @@ export default class Banner extends Component {
                 </ol>
                 <div className="carousel-inner">
                     {this.state.posts.map((post, i) => {
-                        return (<div className={i === 0 ? "carousel-item active" : "carousel-item"}>
-                        <img id={i} src={post.custom_fields.imagem_banner} alt='' />
+                        return (<div className={i === 0 ? "carousel-item active" : "carousel-item"} id={i}>
+                        <img className="img-fluid" src={post.custom_fields.imagem_banner} alt='' />
                         <div className="container">
                             <div className="carousel-caption text-left">
-                                <h2 className="text-lg-right"><div dangerouslySetInnerHTML={{ __html: post.title.rendered }} /></h2>
-                                <p className="resumo-post text-justify"><div dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }} /></p>
+                                <h2 className="text-lg-right" dangerouslySetInnerHTML={{ __html: post.title.rendered }}></h2>
+                                <p className="resumo-post text-justify" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}></p>
                                 <p className="botao"><a className="btn btn-outline-light" href={post.link} role="button"><i className="fas fa-headphones"></i> Ouça agora</a></p>
                             </div>
                         </div>

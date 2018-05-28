@@ -3,14 +3,14 @@
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    bottom: 3rem;
+    bottom: 3em;
     z-index: 10;
-    top: 15%;
+    top: 10%;
     bottom: auto;
 }
 /* Declare heights because of positioning of img element */
 .carousel-item {
-    height: 30rem;
+    height: 30em;
     background-color: #343A40;
 }
 .carousel-item>img {
@@ -23,14 +23,26 @@
 }
 
 #banner h2{
-    font-size:25px;
+    font-size:1.8em;
     margin-bottom:30px;
     white-space: pre-line;
 }
 #banner .resumo-post{
-    font-size:15px;
+    font-size:1.2em;
     margin-bottom:2em;
 }
 #banner .botao{
     text-align: center;
+}
+
+@media screen and (max-width: 760px) {
+    #banner .resumo-post {
+        font-size: 0.8em;
+    }
+    #banner h2 {
+        font-size: 1.2em;
+    }
+    .carousel-caption {
+        top: 5%;
+    }
 }

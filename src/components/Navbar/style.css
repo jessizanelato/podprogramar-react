@@ -1,7 +1,7 @@
 .nav-item{
     margin:0px 5px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .nav-item {
         border-bottom: 1px solid gray;
         line-height: 2em;
