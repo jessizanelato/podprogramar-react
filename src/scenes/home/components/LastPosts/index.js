@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 import './style.css';
 
-export default class LastPosts extends Component {
+export default class LastPosts extends React.Component {
     constructor() {
         super();
         this.state = {
@@ -41,7 +41,6 @@ export default class LastPosts extends Component {
         return (
             <div className="row">
             {this.state.posts.map((post, i) => {
-                console.log(post);
                 return (<div className = "col-md-4">
                     <div className="card mb-4 box-shadow" id={i}>
                         <img className="card-img-top" src={post.imagem_principal.guid.rendered} />

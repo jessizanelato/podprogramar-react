@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import axios from 'axios';
 import './style.css';
 
-export default class Banner extends Component {
+export default class Banner extends React.Component {
     constructor(){
         super();
         this.state = {

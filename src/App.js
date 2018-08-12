@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'; 
 import Home from './scenes/home/index';
 import Apoiadores from './scenes/apoiadores/index';
 
 import './App.css';
 
-export default class App extends Component {
-    render() {
+export default class App extends React.Component {
+render() {
         return (
             <Router>
                 <div>
@@ -17,4 +17,3 @@ export default class App extends Component {
         );
     }
 }
-
