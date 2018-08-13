@@ -11,7 +11,7 @@ export default class LastPosts extends React.Component {
     }
 
     getPostImage(id) {
-        const url = 'https://podprogramar.com.br/wp-json/wp/v2/media/'+id;
+        let url = 'https://podprogramar.com.br/wp-json/wp/v2/media/'+id;
         return axios.get(url)
             .then((response) => {
                 return response;
@@ -23,8 +23,8 @@ export default class LastPosts extends React.Component {
     componentDidMount() {
         axios.get('https://podprogramar.com.br/wp-json/wp/v2/posts?per_page=12&categories=2')
             .then((response) => {
-                const posts = response.data;
-                const promises = posts.map((post, i) => {
+                let posts = response.data;
+                let promises = posts.map((post, i) => {
                     return this.getPostImage(post.featured_media).then((res) => {
                         return {'item': post, 'imagem_principal': res.data};
                     });

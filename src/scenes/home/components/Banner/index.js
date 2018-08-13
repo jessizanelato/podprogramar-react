@@ -13,7 +13,7 @@ export default class Banner extends React.Component {
     componentDidMount() {
         axios.get('https://podprogramar.com.br/wp-json/wp/v2/posts?per_page=2&categories=2')
             .then(res => {
-                const posts = res.data;
+                let posts = res.data;
                 this.setState({ posts: posts });
             })
     }
